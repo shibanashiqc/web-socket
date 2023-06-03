@@ -10,11 +10,9 @@ const __dirname = path.dirname(__filename);
 import express from 'express'
 import expressWs from 'express-ws'
 import http from 'http'
-
-// Our port
 let port = 3000;
 
-// App and server
+
 let app = express();
 let server = http.createServer(app).listen(port);   
 console.log("Server is running on port " + port); 
